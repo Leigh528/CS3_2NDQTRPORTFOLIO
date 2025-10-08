@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>How It's Made</title>
+  <style>
+    body {
+      background-image: url("https://study.com/cimages/multimages/16/landscapes_painted_for_yuweng_met_dp1605554948963801362044697.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .myDiv {
+      background-color: rgba(207, 190, 172, 0.75);
+      text-align: center;
+      padding: 40px;
+      border-radius: 25px;
+      margin: 60px auto;
+      width: 80%;
+      max-width: 1000px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      animation: fadeUp 1.2s ease-in-out;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 42px;
+      animation: popIn 1.5s ease-in-out;
+    }
+
+    p {
+      font-size: 30px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    img {
+      border-radius: 20px;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 1.5s ease forwards;
+    }
+
+    img:first-of-type {
+      animation-delay: 0.8s;
+    }
+
+    img:last-of-type {
+      animation-delay: 1.5s;
+    }
+
+    iframe {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 1.5s ease forwards;
+      animation-delay: 1.8s;
+    }
+
+    /* --- Animation Keyframes --- */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes popIn {
+      0% {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+   
+    Steps-section {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      text-align: left;
+      margin-top: 30px;
+    }
+
+    .flex-section p {
+      flex: 1;
+      font-size: 28px;
+      line-height: 1.5;
+    }
+
+    .flex-section iframe {
+      flex-shrink: 0;
+      width: 420px;
+      height: 236px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+<div class="myDiv">
+  <h1>How Ice Cream Was Made:</h1>
+
+  <article>
+    <img src="https://ancientchinese-icecream.weebly.com/uploads/4/8/7/0/48706547/___1828486_orig.jpg" 
+         style="float: right; margin-left: 20px;">
+
+    <p>Ice cream has existed for way longer than you think! But... have you ever wondered how the Chinese made their ice cream back in the Tang Dynasty? Well according to some records, this was the process they used:</p>
+
+    <br><br>
+    <img src="https://www.thewowinfo.com/media/gr4htrdj/ice-cream-china.jpg" 
+         style="float: left; margin-right: 20px;">
+    <p style="font-size: 35px;"><b>Steps:</b></p>
+    <p>
+      1. Heat up a mixture of cow, goat, and buffalo milk.<br>
+      2. Ferment the mixture until it turns into yogurt.<br>
+      3. Mix the fermented mixture with flour and let it refrigerate.
+      <br><br> And it’s done! Ready to be served to the emperor himself! 
+    </p>
+
+    <br><center><q>But I don’t have goat and buffalo milk! How am I supposed to recreate this at home?</q></center>
+    <p><br>Not to fear dear reader! Our modern method of making ice cream is way easier than you think!</p>
+
+    <h1><br><b>Ingredients needed:</b></h1>
+<img src="https://www.cuisinart.co.uk/dw/image/v2/ABAF_PRD/on/demandware.static/-/Sites-uk-cuisinart-sfra-Library/default/dw59e761e7/images/recipes/Homemade-Vanilla-Ice-Cream.jpg?sw=1200&sh=1200&sm=fit" 
+     alt="Homemade Vanilla Ice Cream"
+     style="float: left; margin-right: 20px; border-radius: 20px; max-width: 400px; height: auto;">
+
+    <p style="text-align:left;">
+      1. Milk<br>
+      2. Heavy cream<br>
+      3. Condensed milk<br>
+      4. Any topping available in your house (e.g., Oreos, wafers)<br>
+      5. Vanilla extract<br>
+      6. 2 Plastic zip lock bags (One big and one small)<br>
+      7. Rock salt<br>
+      8. Ice<br>
+    </p>
+
+   <br> <h1><b>Steps:</b></h1>
+   
+    <div class="Steps-Section">
+      <p>
+        1. Whisk the heavy cream until it forms stiff peaks.<br>
+        2. Whisk together the heavy cream mixture, milk, condensed milk, and vanilla extract.<br>
+        3. Place the mixture in the small ziplock bag.<br>
+        4. In the bigger ziplock bag, place the ice and rock salt.<br>
+        5. Put the small bag inside the big plastic bag.<br>
+        6. Shake it vigorously for about 5-10 minutes.<br>
+        7. Once you see it solidify, take out the small ziplock bag and enjoy!<br>
+      </p>
+
+      <iframe 
+        src="https://www.youtube.com/embed/_Zt1EuIEhvw" 
+        title="How Ice Cream Was Made - YouTube"
+        frameborder="0" 
+        allowfullscreen>
+      </iframe>
+	 <br> <i>Refer to the youtube video attached above as it follows a similar recipe</i>
+    </div>
+	<h4>Oops! looks like this is the end of this article.. Ready to return?</h4>
+	<a href = " http://127.0.0.1:5500/Unique_IceCream_Flavors.html">Previous page</a>      <a href ="">Go back!</a>
+  </article>
+</div>
+
+</body>
+</html>
