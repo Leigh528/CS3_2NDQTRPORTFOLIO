@@ -1,13 +1,92 @@
 <!DOCTYPE html>
 <html>
-<title>How its Made</title>
-<body style= "background-color:#FAEBEB;">
-	<head> </head>
-    <center><h1> How Ice cream was made:</h1></center>
-	<hr />
-<br> <text style ="font-size: 20px;"> Ice cream has existed for way longer than you think! But.. have you ever wondered how the Chinese made their ice cream back in the Tang Dynasty? Well according to some records, this was the process they used:</p>
-	<img src = "https://ancientchinese-icecream.weebly.com/uploads/4/8/7/0/48706547/___1828486_orig.jpg" style ="float: right;">
+<head>
+<title>My Webpage</title>
+<style>
+	body {
+      background-image: url("https://images.rawpixel.com/image_social_landscape/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsb2ZmaWNlMTJfZ3JhZGllbnRfc2t5X2Flc3RoZXRpY19iYWNrZ3JvdW5kX3NwYXJrbHlfcGlua18yODUxMTgzOC0zOTNkLTQ2YjYtOTM0Yy0xNTcxNTliYjI4MjFfMS5qcGc.jpg");
+      background-size: cover;
+	  background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
 
+    .myDiv {
+      background-color: rgba(229, 207, 247, 0.75);
+      text-align: center;
+      padding: 40px;
+      border-radius: 25px;
+      margin: 60px auto;
+      width: 80%;
+      max-width: 1000px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      animation: fadeUp 1.2s ease-in-out;
+    }
+	h1 {
+      text-align: center;
+      font-size: 42px;
+      animation: popIn 1.5s ease-in-out;
+    }
+
+    p {
+      font-size: 30px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    img {
+      border-radius: 20px;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 1.5s ease forwards;
+    }
+
+    img:first-of-type {
+      animation-delay: 0.8s;
+    }
+
+    img:last-of-type {
+      animation-delay: 1.5s;
+    }
+
+    iframe {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 1.5s ease forwards;
+      animation-delay: 1.8s;
+    }
+
+   
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes popIn {
+      0% {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+</style>
+</head>
+<body>
+	<div class="myDiv">
+			<h1>Hello World!</h1>
+	</div>
 
 </body>
 </html>
